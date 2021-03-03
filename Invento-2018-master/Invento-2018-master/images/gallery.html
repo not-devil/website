@@ -1,0 +1,71 @@
+<style>
+		ul{
+			list-style: none outside none;
+			padding-left: 0;
+			margin: 0;
+		}
+	</style>
+
+	 <script>
+		 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+				loop:true,
+				keyPress:true
+			});
+			$('#image-gallery').lightSlider({
+				gallery:true,
+				item:1,
+				thumbItem:5,
+				slideMargin: 0,
+				speed:500,
+				auto:true,
+				loop:true,
+				onSliderLoad: function() {
+					$('#image-gallery').removeClass('cS-hidden');
+				}  
+			});
+		});
+	</script>
+
+
+<div class="header">
+	<span class="title">Gallery</span>
+	<button onclick="closepop()" class="close-btn">
+		<img src="images/close_btn_image.png" alt="X"/>
+	</button>
+</div>
+
+<div class="content">
+	<!--start-->
+	<div class="gallery-section" style="max-width: 448px; margin:auto;">
+		<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+			<li data-thumb="images/invento/1.jpg"> 
+				<img src="images/invento/1.jpg" />
+				 </li>
+			<li data-thumb="images/invento/2.jpg"> 
+				<img src="images/invento/2.jpg" />
+				 </li>
+			<li data-thumb="images/invento/3.jpg"> 
+				<img src="images/invento/3.jpg" />
+				 </li>
+			<li data-thumb="images/invento/4.jpg"> 
+				<img src="images/invento/4.jpg" />
+				 </li>
+			<li data-thumb="images/invento/5.jpg"> 
+				<img src="images/invento/5.jpg" />
+				 </li>
+			<li data-thumb="images/invento/6.jpg"> 
+				<img src="images/invento/6.jpg" />
+				 </li>
+			<li data-thumb="images/invento/7.jpg"> 
+				<img src="images/invento/7.jpg" />
+				 </li>
+			<li data-thumb="images/invento/8.jpg"> 
+				<img src="images/invento/8.jpg" />
+				 </li>
+		</ul>
+	</div>
+	<!--end-->
+
+
+</div>

@@ -1,0 +1,103 @@
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+		<h1>Student Registration Form</h1>
+		<form action="connect.php" method="POST">
+			<table>
+				<tr>
+					<td>
+			  				First Name:		
+			  							
+	          		</td>					
+	          		<td>	
+	          			<input type="text" name="fname" placeholder="Enter First Name" required>
+	          		</td>
+	          	</tr>
+	          	<tr>
+	          	    <td>		
+			  			Last Name: 
+			  		</td>
+			  		<td>	
+			  			<input type="text" name="lname" placeholder="Enter Last Name" required>
+			  		</td>
+			  	</tr>		
+	          	
+	          	
+	          	<tr>
+	          		<td>
+	          			Gender: 
+	          		</td>
+	          		<td>	
+	          			<input type="radio" name="Gender" value="m" required>Male&nbsp;&nbsp;&nbsp;
+	          			<input type="radio" name="Gender" value="f" required>Female&nbsp;&nbsp;&nbsp;
+	          			<input type="radio" name="Gender" value="o" required>Others&nbsp;&nbsp;&nbsp;
+	          		</td>
+	          	</tr>
+	          	<tr>
+	          	 	<td>		
+	          			Email:
+	          		</td>	
+	          		<td>
+	          				 <input type="email" name="email" placeholder="someone@somewhere.com" size="30" required>
+	          		</td>
+	          	</tr>
+	          	<tr>
+	          	 	<td>
+						Contact Number: 
+												
+	          	    </td>
+	          	    <td>         			
+	          				<input type="text" name="Number" required>
+	          		</td>
+	          	</tr>
+	          		
+	          		<td>	
+              				Address: 	
+              		</td>
+              		<td>		
+              			<input type="text" name="Address" size="50" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              		</td>
+              	</tr>
+              	<tr>
+              		<td>		
+              			City: 
+              		</td>	
+              		<td>
+										
+						<input type="text" name="City" required><br><br>
+					</td>
+				</tr>
+				<tr>		
+              		<td>
+              				PIN Code: 
+              		</td>
+              		<td>		
+              			<input type="text" name="PIN" placeholder="123456" required><br><br>
+              		</td>
+              	</tr>		
+						
+              
+           <tr>
+           	         <td>
+           	  	        user name
+           	         </td>
+           	         <td>
+           	   	       <input type="text" name="username" placeholder="username" required>
+           	        </td>
+            </tr>
+             <tr>
+           	         <td>
+           	  	        password
+           	         </td>
+           	         <td>
+           	   	       <input type="password" name="password" placeholder="password" required>
+           	        </td>
+            </tr>
+
+ 		  </table>
+		  <input type="submit" name="submit">
+		</form>
+	</body>
+	</html>	

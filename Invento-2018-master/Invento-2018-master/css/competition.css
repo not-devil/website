@@ -1,0 +1,15 @@
+/* CSS for Competition subsection */
+.pad-bottom{
+	padding-bottom:30px;
+}
+.btn-custom{
+	background-color:rgba(66, 244, 209,0.2);
+	color: #eee;
+}
+.btn-custom:hover{
+	background-color:rgba(66, 244, 209,0.4);
+	color: #fff;
+}
+.btn-custom.disabled{
+	opacity: .90;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>apple india</title>
+	<!--<img src="apple-logo-png-5a3a5b3b8881d5.0428390915137738835591.jpg">-->
+</head>
+<body>
+     
+  <nav>
+  	<div class="manu">
+  		<ul>
+  			<li><a href="#"><i class="fa fa-apple"></i></a></li>
+  			<li><a href="#" class="manu-item">mac</a></li>
+  			<li><a href="#" class="manu-item">iPaid</a></li>
+  			<li><a href="#" class="manu-item">iPhone</a></li>
+  			<li><a href="#" class="manu-item">Watch</a></li>
+  			<li><a href="#" class="manu-item">TV</a></li>
+  			<li><a href="#" class="manu-item">Music</a></li>
+  			<li><a href="#" class="manu-item">Support</a></li>
+            <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+            <li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
+  		</ul>
+  		<div  class="search-form">
+  			<form>
+  			   <input type="text" name="" placeholder="Search">
+  			</form>
+  		</div>
+  		<a class="close"><i class="fa fa-times"></i></a>
+  	</div>
+  </nav>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function()
+  	{
+      $('#search').click(function() {
+      	$('.manu-item').addClass('hide-item')
+      	$('.search-form').addClass('active')
+      	$('.close').addClass('active')
+      	$('#search').hide()
+      })
+       $('.close').click(function() {
+      	  $('.manu-item').removeClass('hide-item')
+      	  $('.search-form').removeClass('active')
+      	  $('.close').removeClass('active')
+      	  $('#search').show()
+  	})
+  </script>
+</body>
+</html>

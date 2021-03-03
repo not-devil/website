@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>faq section</title>
+	<!--ionicons-->
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<style type="text/css">
+		*,::before,::after {
+              margin: 0;padding: 0;
+              box-sizing: inherit;
+		}
+		html
+		{
+			font-family: Brandon Text,sans-serif;font-size: 10px;box-sizing: border-box;
+		}
+		
+		#faq
+		{
+			width: 100%;
+			height: 100vh;
+			background-color: #3c4053;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.faq-container
+		{
+			width: 100%;
+			max-width: 80rem;
+			margin: 0 auto;
+			padding: 0 .5rem;
+		}
+
+		.faq-item
+		{
+			background-color: #283042;
+			border-radius: .4rem;
+			margin-bottom: 1rem;
+			padding: 1rem;
+			box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+		}
+	.faq-accordien-link
+	{
+		font-size: 1.6rem;
+		color: rgba(255,255,255,.8);
+		text-decoration: none;
+		background-color: #283042;
+		width: 100%;
+		padding: 1rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.faq-accordien-link i
+	{
+		color: #e7d5ff;
+		padding: .5rem;
+
+	}
+.faq-accordien-link .ion-md-remove
+{
+	display: none;
+}
+.faq-answer
+{
+   max-height: 0;
+	overflow:hidden;
+	position: relative;
+	background-color: #212838;
+	color: rgba(255,255,255,0.6);
+	font-size: 1.4rem;
+	transition: max-height 650ms;
+
+}
+.faq-answer:before
+{
+	content: "";
+	position: absolute;
+	width: .6rem;
+	height: 90%;
+	background-color: #8fc460;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.faq-answer p
+{
+	color: rgba(255,255,255,0.6);
+	font-size: 1.4rem;
+	padding: 2rem;
+}
+.faq-item:target .faq-answer
+{
+	max-height: 20rem;
+}
+.faq-item:target .faq-accordien-link .ion-md-add
+{
+display: none;
+}
+.faq-item:target .faq-accordien-link .ion-md-remove
+{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+<section id="faq">
+	<div class="faq-container">
+		<div class="faq-accordien">
+			<div class="faq-item" id="question1">
+				<a class="faq-accordien-link" href="#question1">
+				yashi kon h....?
+				<i class="icon ion-md-add"></i>
+				<i class="icon ion-md-remove"></i>
+				</a>
+				<div class="faq-answer">
+					yashi ek samajhadar ladki aur thodi pagle.
+				</div>
+			</div>
+			<!--2 question--->
+			<div class="faq-item" id="question2">
+				<a class="faq-accordien-link" href="#question2">
+				yashi kon h....?
+				<i class="icon ion-md-add"></i>
+				<i class="icon ion-md-remove"></i>
+				</a>
+				<div class="faq-answer">
+					<p>yashi ek samajhadar ladki aur thodi pagle.</p>
+				</div>
+			</div>
+			<!--3rd question-->
+			<div class="faq-item" id="question3">
+				<a class="faq-accordien-link" href="#question3">
+				yashi kon h....?
+				<i class="icon ion-md-add"></i>
+				<i class="icon ion-md-remove"></i>
+				</a>
+				<div class="faq-answer">
+					<p> yashi ek samajhadar ladki aur thodi pagle.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+</html>
